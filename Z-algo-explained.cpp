@@ -115,7 +115,9 @@ auto z_algo(string s)
                 while(r < n && s[r] == s[r - l])
                     r++;
 
-                z[i] = r - l + 1;
+                z[i] = r - l;
+                      
+                r--;
             }
         }
     }
